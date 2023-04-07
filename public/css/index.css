@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Vollkorn:wght@500&display=swap");
+
+:root {
+  --white: #ffffff;
+  --darkbrown: #c8e3fd;
+  /* --brown: #fff; */
+  /* --lightbrown: #c9e6ff; */
+  --lightbrownn: #92bde7;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--lightbrownn);
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  /* color: var(--darkbrown); */
+  font-size: 40px;
+  font-family: "Kalam", cursive;
+}
+h2,
+h3 {
+  /* color: var(--lightbrown); */
+  text-align: center;
+  font-size: 30px;
+}
+h3 {
+  font-size: 15px;
+}
+.navbar {
+  text-align: center;
+}
+.button {
+  padding: 5px 10px;
+  font-size: 20px;
+  font-family: "Vollkorn", serif;
+  letter-spacing: 2px;
+  background-color: var(--darkbrown);
+  /* color: var(--lightbrownn); */
+  border-radius: 10px;
+  transition-duration: 1s;
+  margin: 20px;
+  width: 120px;
+}
+.button:hover ,#submit:hover{
+  background-color: var(--lightbrownn);
+  /* color: var(--darkbrown); */
+  box-shadow: 2px 2px 1px 1px var(--darkbrown);
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.left-side,
+.right-side {
+  background-color: var(--darkbrown);
+  /* color: var(--lightbrownn); */
+  padding: 20px;
+  width: 250px !important;
+  border-radius: 10px;
+  word-wrap: break-word;
+  height: fit-content;
+}
+.left-side p,
+.right-side p {
+  margin-bottom: 20px;
+  font-size: 25px;
+  /* text-align: justify; */
+  text-decoration: underline var(--lightbrownn);
+  font-family: "Vollkorn", serif;
+}
+.left-side ul,
+.right-side ul {
+  font-size: 18px;
+  font-family: sans-serif;
+  padding-left: 25px;
+}
+.left-side li,
+.right-side li {
+  margin-bottom: 15px;
+}
+.index {
+  padding: 20px;
+}
+.mail {
+  width: 780px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-radius: 10px;
+  background-color: var(--white);
+  padding: 12px;
+  border-bottom: solid 1px var(--lightbrown);
+  margin-top: 18px;
+}
+.name,
+.subject,
+.time {
+  display: inline-block;
+}
+.index a{
+  text-decoration: none;
+}
+.index a:hover{
+  text-decoration: underline;
+}
+a .name {
+  text-transform: uppercase;
+  color: black;
+  margin-right: 30px;
+}
+.subject {
+  width: 50%;
+}
+.time {
+  width: 80px;
+}
+.mail button {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: red;
+  font-weight: 900;
+}
+.compose {
+  display: none;
+  border: 2px solid var(--darkbrown);
+  width: 780px;
+  padding: 40px;
+}
+label {
+  font-size: 20px;
+  font-weight: 900;
+}
+input {
+  width: 670px;
+  height: 25px;
+  margin: 5px;
+}
+#submit {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 590px;
+  margin-top: 20px;
+  outline: none;
+  background-color: var(--darkbrown);
+  border: none;
+  /* color: var(--lightbrownn); */
+  font-weight: 900;
+  border-radius: 20px;
+  font-family: "Vollkorn", serif;
+  border: solid black 2px;
+  letter-spacing: 2px;
+}
+#name{
+  padding: 20px;
+  outline: none;
+}
+.details{
+  margin: 20px;
+  padding: 30px;
+  border: solid black 1px;
+  background-color: var(--darkbrown);
+}
+.detail-subject{
+  font-family: "Vollkorn", serif;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px;
+}
+.detail-to{
+  font-family: "Vollkorn", serif;
+  font-size: 35px;
+  font-weight: 900;
+  margin: 10px;
+}
+.detail-time{
+  font-size: 15px;
+  color: rgba(0, 0, 0,0.7);
+  margin: 10px;
+}

@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/index.css" />
+    <title>Email For Blind</title>
+  </head>
+  <body>
+    <h1>EMAIL FOR BLIND</h1>
+    <h2>The National Institute of Enginerring</h2>
+    <h3>Manandavadi Road Mysuru – 570008 Karnataka</h3>
+    <div class="navbar">
+      <a href="/"><button id="home" class="button">Home</button></a>
+      <a href="/compose"><button id="compose" class="button">Compose</button></a>
+    </div>
+    <div class="main">
+      <div class="left-side">
+        <p>Details of developers</p>
+        <ul>
+          <li>Narayani H - <br />4NI19CS073</li>
+          <li>Manoj C S - <br />4NI19CS066</li>
+          <li>Sathkeerthi Y Agnihothri - <br />4NI19CS073</li>
+          <li>Shreya M<br />4NI20CS407</li>
+        </ul>
+      </div>
+      <div class="index">
+        <% for(var i=result.length-1; i>=0; i--) {%>
+          <a href="number"><div class="mail">
+            <span style="margin-right: 20px;"><%= result[i].id %></span>
+            <span class="name"><%= result[i].receiver.split("@")[0] %></span>
+              <span class="subject"><%= result[i].Subject %></span>
+            </div></a>
+              <% } %>
+        </div>
+      <div class="compose">
+        <form action="">
+          <label for="to">To:&emsp;&ensp;&nbsp;&nbsp;</label>
+          <input type="email" name="to" id="to" /><br />
+          <label for="subject">Subject:</label>
+          <input type="text" name="subject" id="subject" /><br />
+          <label for="body">Body</label><br />
+          <textarea name="body" id="body" cols="90" rows="25"></textarea>
+          <input type="submit" name="submit" id="submit" />
+        </form>
+      </div>
+      <div class="right-side">
+        <p>Recent email addresss</p>
+        <ul>
+          <% for(var i=result.length-1; i>=0; i--) {%>
+            <li><%= result[i].receiver %></li>
+            <% } %>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
